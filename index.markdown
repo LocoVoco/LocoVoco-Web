@@ -4,3 +4,7 @@
 
 layout: home
 ---
+
+
+An app to help you meet like minded people in the physical not virtual world.
+
