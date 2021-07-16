@@ -1,9 +1,26 @@
+<!DOCTYPE html>
+<html>
+
 <head>
     <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset=“UTF-8”>
 
     <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        article {
+            min-height: 100%;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 100%;
+        }
+
+
         .center {
             text-align: center;
         }
@@ -14,69 +31,101 @@
     </style>
 
     <title>LocoVoco | Connect & meet new people</title>
-    <meta name="description" content="Find out about a new way to meet new like minded people. Let's cure the disconnect."/>
+    <meta name="description"
+        content="Find out about a new way to meet new like minded people. Let's cure the disconnect." />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 </head>
 
 <body>
+    <article>
 
-    <!-- we are using a layout based on the flexbox layout see minicss.org it will display differently on mobile and web which is what we want -->
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-0 col-md-2"></div>
-            <div class="col-sm-12 col-md-8">
+        <header class="sticky">
+            <a href="index.html" class="logo"> <img src="favicon.ico" alt="Image description"></a>
+            <span>|</span>
+            <a href="blog.html" role="button">BLOG</a>
+            <a href="contact.html" role="button">CONTACT</a>
+        </header>
 
-                <div class="center">
+        <!-- we are using a layout based on the flexbox layout see minicss.org it will display differently on mobile and web which is what we want -->
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-0 col-md-2"></div>
+                    <div class="col-sm-12 col-md-8">
 
-                    <img src="Logo.png" alt="Logo" />
+                        <div class="center">
 
-                    <h2>What We Do</h2>
-                    <p>
-                        We are a new company who want to help people meetup and get connected in the physical world and out of the
-                        virtual world. <br />
-                        We believe that connecting makes for happier people and a happier world. 
-                        Watch this space as we work on technology to help bring people together.<br />
-                       <h4 style="color: #19C4A3;">Let's cure the disconnect.</h4> 
-                    </p>
+                            <img src="Logo.png" alt="Logo" />
+
+                            <h2>What We Do</h2>
+                            <p>
+                                We are a new company who want to help people meetup and get connected in the physical
+                                world
+                                and
+                                out of the
+                                virtual world. <br />
+                                We believe that connecting makes for happier people and a happier world.
+                                Watch this space as we work on technology to help bring people together.<br />
+                            <h4 style="color: #19C4A3;">Let's cure the disconnect.</h4>
+                            </p>
+                        </div>
+                        <br />
+
+                        <div class="center">
+
+                            <h2>The App</h2>
+
+                            <p>
+                                We are developing an app in Glasgow which will allow users to meet like-minded people
+                                and
+                                have a
+                                chat, have a coffee, see if they connect. <br />
+                                It's a simple idea: instead of chatting online all day, swiping left or right and
+                                scrolling
+                                through pixelated people,
+                                we think that if someone looks like your type of person you should get out there and
+                                meet
+                                them.
+                                The idea isn't for dating or hookups - there are already plenty of apps for this. Our
+                                app is
+                                designed for you to make new aquaintances, make new friends and meet new people
+                                in your area to form better communities. Why waste all day chatting via apps to see if
+                                you
+                                will
+                                connect with someone? Meeting up in person in the real world
+                                surely is a much more enjoyable experience.
+                            </p>
+
+                        </div>
+
+                        <br />
+                        <hr />
+                        <div class="center">
+
+                            <h3>Get Involved</h3>
+
+                            <p>
+                                We want your help and feedback so that we can build the best app possible. In return we
+                                can
+                                offer a fun experience,
+                                the chance to meet new people, and we'll even buy you a coffee. :) </h2> </br>
+                                Sign up to join the beta testing program at: <a
+                                    href="mailto:hello@locovo.co?subject=Hello">Email LocoVoco</a>
+                            </p>
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-sm-0 col-md-2"></div>
                 </div>
-                <br/>
-
-                <div class="center">
-
-                    <h2>The App</h2>
-
-                    <p>
-                        We are developing an app in Glasgow which will allow users to meet like-minded people and have a chat, have a coffee, see if they connect. <br />
-                        It's a simple idea: instead of chatting online all day, swiping left or right and scrolling through pixelated people, 
-                        we think that if someone looks like your type of person you should get out there and meet them. The idea isn't for dating or hookups - there are already plenty of apps for this. Our app is designed for you to make new aquaintances, make new friends and meet new people 
-                        in your area to form better communities. Why waste all day chatting via apps to see if you will connect with someone? Meeting up in person in the real world
-                        surely is a much more enjoyable experience.
-                    </p>
-
-                </div>
-
-                <br />
-                <hr />
-                <div class="center">
-
-                    <h3>Get Involved</h3>
-
-                    <p>
-                        We want your help and feedback so that we can build the best app possible. In return we can offer a fun experience, 
-                        the chance to meet new people, and we'll even buy you a coffee. :) </h2> </br>
-                        Sign up to join the beta testing program at: <a href="mailto:hello@locovo.co?subject=Hello">Email LocoVoco</a>
-                    </p>
-
-
-                </div>
-
             </div>
-            <div class="col-sm-0 col-md-2"></div>
-        </div>
-    </div>
+        </main>
 
-    <footer class="sticky">
-        <p>&#169; 2021- LocoVoco Uk </p>
-    </footer>
-
+        <footer class="sticky">
+            <p>&#169; 2021- LocoVoco Uk </p>
+        </footer>
+    </article>
 </body>
+
+</html>
