@@ -23,8 +23,8 @@ Exploring the idea leads to whether the app should be meetup or profile focussed
 
 What is the problem that we are trying to solve for the user, is it:
 
-* For people to make a new best friend to cure loneliness.
-* For people to make acquaintances, many friends to help fix loneliness know people in the area.
+* For people to make new friends.
+* For people to make acquaintances, many friends.
 * For people to get out and socialize more by meeting up with people, the pandemic plays a large part in this.
 
 The above may depend on the following:
@@ -69,7 +69,7 @@ This is getting more like tinder but for friends.
 
 The above options are different views on the same data, for example the user could be seeing meetups as in option 2 then select display collapsed and it would show the display as in option 3, the problem with this is that we want to keep the UI as simple as possible.
 
-## Outcome what do we build for the next phases.
+## Outcome what do we build for the next phase.
 
 I think we can be sure that users care about the profile of who they meet up with.  
 We dont know whether users only care about the profile and see the meetup just as a necessary thing to meet other people.
