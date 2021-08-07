@@ -4,6 +4,8 @@ heading: Should the app prioritize the meetup or the profile?
 date: June 6th 2021
 ---
 
+# Heading
+
 ## The app can pivot along the path but the vision should stay intact.
 
 The initial vision for the app is 2 things:
@@ -78,6 +80,6 @@ Moving to profile based would be a divergence in how we develop the app.
 For the next release we build option 2 as this still fits into the vision.  
 When we get more users we keep questioning to see what option would suit different people, we should re-asses whether we are on the right path once we have more data.
 
-A good suggestion is to have some functionality to be able to suggest a time to a user, this could be a paid feature, add this feature to the backlog.
+For a further release we include an option to suggest a time to a user if the time they have put up isn't suitable, we then record how much users use the accept feature and how much they use the suggest a time feature, this will show us how users are using the functionality and we can base decisions on this.
 
 Thanks to Hatty and Amy on the feedback around profile and meetup views.

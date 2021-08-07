@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 
+<!-- TODO: FB add icons for contact links https://simpleicons.org -->
+<!-- TODO: FB add Liam and Spott and include as meet the team  -->
+
 <head>
     <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,27 +29,81 @@
             grid-template-columns: 100%; 
         }
 
+        .center {
+            text-align: center;
+        }
+
+        p {
+            line-height: 2;
+        }
+
     </style>
 
 </head>
 
 <body>
     <article>
+
         <header class="sticky">
             <a href="index.html" class="logo"> <img src="resources/favicon.ico" alt="Image description"></a>
             <span>|</span>
-            <a href="blog.html" role="button">BLOG</a>
+            <!-- <a href="blog.html" role="button">BLOG</a> -->
             <a href="contact.html" role="button">CONTACT</a>
         </header>
 
+        <!-- we are using a layout based on the flexbox layout see minicss.org it will display differently on mobile and web which is what we want -->
         <main>
             <div class="container">
                 <div class="row">
                     <div class="col-sm-0 col-md-2"></div>
                     <div class="col-sm-12 col-md-8">
+
+                        <br />
                         <div class="center">
-                            <a href="mailto:hello@locovo.co?subject=Hello">Email LocoVoco</a>
+                        <!-- <h1>Meet The Team</h1> -->
+                        <!-- <hr/> -->
+                    </div>
+                        <br />
+
+
+                        <div class="center">
+
+                         
+                            <img src="resources/fred_founder_picture.jpg" alt="Founder Image" width="250" height="250" style="border-radius: 20px" />
+
+                            <!-- <hr> -->
+                            <br />
+                            <h2>Fred Bowker</h2>
+                            <h3>Previously: VP Software Engineer at Morgan Stanley</h3>
+                            <h3>Currently: Founder and Lead Developer at LocoVoco</h3>
+                    
+                            <br />
+                            <p>
+                                I have 15 years experience working as a Software Developer building successful software projects. After researching the global increase in disconnect and loneliness and following on from the Coronavirus pandemic I felt I needed to try and help in whatever way I could.
+                                As a developer the way I can help is to found and build something, so I quit my job working for Morgan Stanley to found LocoVoco, an app that wants to contribute to a more connected world. <br />
+                                <br>
+                                If you want to know more about LocoVoco or you can help out in anyway please get in touch, I'd be happy to hear from you :)
+                            <p>
+                                <br />
+                    
+                                <a href="tel:+44 7539769454">Call</a> |
+                                <a href="mailto:fred.bowker@locovo.co">Email</a> |
+                                <a href="http://www.linkedin.com/in/fred-bowker-46871971">Linkedin</a>
+                            </p>
+
+                            <hr/>
+                            <br />
+
+                            <!-- <img src="resources/liam.jpeg" alt="Founder Image" width="300" height="300" style="border-radius: 20px" />
+
+                            <h2>Liam Nugent</h2>
+                            <h3>Mentor and Advisor at LocoVoco</h3> -->
+
                         </div>
+                
+                        <br />
+                        <!-- <hr /> -->
+
                     </div>
                     <div class="col-sm-0 col-md-2"></div>
                 </div>
@@ -57,7 +114,8 @@
             <p>&#169; 2021- LocoVoco Uk </p>
         </footer>
     </article>
-
 </body>
+
+
 
 </html>
