@@ -429,7 +429,7 @@ nav > ul li a:hover, nav > ul li a:active {
         -webkit-clip-path: url(#screenMask);
         clip-path: url(#screenMask);
         margin: 0px;
-        margin-top:17px
+        margin-top:17px;
     }
 
     .videoContainer {
