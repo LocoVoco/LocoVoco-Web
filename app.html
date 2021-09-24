@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
+<!-- Countdown timer taken from: https://github.com/BrooonS/TimezZ-->
 <!-- TODO: Need To Fix the footer to include our social icons -->
 
 <head>
@@ -20,9 +21,46 @@
     <link rel="stylesheet" href="automatic-app-landing-page/main.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
 
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/timezz@6.1.0/dist/timezz.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            timezz('.timer', {
+                date: 'Nov 8, 2021',
+                stop: false,
+                canContinue: true,
+                withYears: false,
+                beforeCreate() { },
+                beforeDestroy() { },
+                update(event) { },
+            });
+        });
+    </script>
+
+    <!-- mailchimp email signup links-->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script
+        type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+
+    <style>
+        .timer {
+            font-size: 20px;
+            color: #fff;
+        }
+    </style>
+
+
 </head>
 
 <body>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v12.0"
+        nonce="eiGp9g60"></script>
+
     <article>
 
         <header class="sticky">
@@ -53,7 +91,8 @@
                             </video>
                         </div>
 
-                        <img class="iphoneScreen" src="automatic-app-landing-page/assets/screenshot/yourscreenshot.png" alt="">
+                        <img class="iphoneScreen" src="automatic-app-landing-page/assets/screenshot/yourscreenshot.png"
+                            alt="">
 
                         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
                     </div>
@@ -75,21 +114,73 @@
                                 LocoVoco
                             </h1>
                             <h2 class="appPrice">
-                                Free
+                                <div>Next Trial Run, 8th November, <b>SAVE THE DATE !!</b></div>
+                                <div class="timer">
+                                    <!-- Years: <div data-years></div> -->
+                                    <span data-days></span> <span style="margin-right: 10px;">Days,</span>
+                                    <span data-hours></span> <span style="margin-right: 10px;">Hours,</span>
+                                    <span data-minutes></span> <span style="margin-right: 10px;">Minutes,</span>
+                                    <span data-seconds></span> <span style="margin-right: 10px;">Seconds</span>
+                                </div>
+
                             </h2>
                         </div>
                         <div class="appDescriptionContainer">
-                            <p class="appDescription">
-                                Let's cure the disconnect.
-                            </p>
-                        </div>
-                        <div class="downloadButtonsContainer">
 
-                            <a class="appStoreLink" href=""><img class="appStore"
-                                    src="automatic-app-landing-page/assets/appstore.png"></a>
+                            <div style="text-align: center; color: #fff;"><b>SUBSCRIBE !!</b> To our newsletter to keep
+                                updated </div>
+                            <br />
+
+                            <!-- Begin Mailchimp Signup Form -->
+                            <div id="mc_embed_signup">
+                                <form
+                                    action="https://locovo.us6.list-manage.com/subscribe/post?u=00ae5713cd3e9da2e11373166&amp;id=ac0e19d7bc"
+                                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                                    class="validate" target="_blank" novalidate>
+
+                                    <div id="mc_embed_signup_scroll">
+
+                                        <div>
+                                            <label for="mce-EMAIL">Email Address </label>
+                                            <input type="email" value="" name="EMAIL" id="mce-EMAIL"
+                                                style="width: 50%;">
+                                            <input type="submit" value="Subscribe" name="subscribe"
+                                                id="mc-embedded-subscribe" class="button">
+                                        </div>
+
+                                        <div id="mce-responses" class="clear">
+                                            <div class="response" id="mce-error-response" style="display:none">
+                                            </div>
+                                            <div class="response" id="mce-success-response" style="display:none">
+                                            </div>
+                                        </div>
+                                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input
+                                                type="text" name="b_00ae5713cd3e9da2e11373166_ac0e19d7bc" tabindex="-1"
+                                                value="">
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                            <!--End mc_embed_signup-->
+                            <br />
+                            <div style="color: #fff; text-align: center;"> <b>FOLLOW !! </b> us on Twitter and we'll
+                                keep you updated
+                            </div>
+                            <br />
+                            <div style="color: #fff; text-align: center;">
+                                <a href="https://twitter.com/locovocoapp?ref_src=twsrc%5Etfw"
+                                    class="twitter-follow-button" data-size="large" data-show-screen-name="false"
+                                    data-show-count="false">Follow @locovocoapp</a>
+                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </div>
+
+                            <br>
+
                         </div>
+
                     </div>
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>                  
                 </div>
 
                 <p style="text-align: center;">
