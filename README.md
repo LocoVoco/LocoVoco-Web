@@ -4,7 +4,7 @@
 
 ```bash
 # we use jekyll as a static site generator this gives us the functionality of using templates in our code.
-# we are mainly use the functionality of the liquid template language https://shopify.github.io/liquid/
+# we are mainly using the functionality of the liquid template language https://shopify.github.io/liquid/
 #   layouts basically a default template for our page
 #   includes including html so we don't have to repeat ourselves
 #   _config.yml includes custom variables that we want to use
