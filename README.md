@@ -33,5 +33,10 @@ pandoc --standalone --template blog-template.html feature-meetup-profile-0607202
 
 ```
 jekyll build
-jekyll build --watch
+jekyll build --watch    
 ```
+
+## Resource used in building website
+
+https://simpleicons.org/
+
