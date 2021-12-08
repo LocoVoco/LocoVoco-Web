@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="/resources/css/post.css">
+
+<!-- The below is needed to use the hyvor commenting system for blog posts -->
+
+<script type="text/javascript">
+    var HYVOR_TALK_WEBSITE = 5825;
+    var HYVOR_TALK_CONFIG = {
+        url: false,
+        id: '{{page.id}}'
+    };
+</script>
+<script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>
+
+<article>
+    <header class="sticky">
+        {% include header.html %}
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-0 col-md-2"></div>
+                <div class="col-sm-12 col-md-8">
+                    <div>
+                        <h1>{{ page.title }}</h1>
+                        <hr />
+                        <br />
+                        {{ content }}
+                        <hr />
+                        <br />
+                        <div id="hyvor-talk-view"></div>
+                    </div>
+                </div>
+                <div class="col-sm-0 col-md-2"></div>
+            </div>
+        </div>
+    </main>
+</article>

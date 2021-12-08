@@ -11,32 +11,24 @@
 gem install jekyll bundler
 ```
 
-## Generating blog posts.
-
-Blog posts are generated using pandoc to convert markdown to html file.
-You should include the following metadata: (see feature-meetup-profile-06072021.md):
-
-```
----
-title: LocoVoco | Connect & meet new people
-heading: Should the app prioritize the meetup or the profile?
-date: June 6th 2021
----
-```
+## Building running the site with jekyll.
 
 ```bash
-# run the following command to generate the html
-pandoc --standalone --template blog-template.html feature-meetup-profile-06072021.md -o feature-meetup-profile-06072021.html
-```
-
-## Building the site with jekyll.
-
-```
 jekyll build
-jekyll build --watch    
+jekyll build --watch
+# This will open the site at http://127.0.0.1:4000
+jekyll serve    
 ```
+
+## Comments site
+
+comments on the blog are using: https://talk.hyvor.com
 
 ## Resource used in building website
 
 https://simpleicons.org/
+
+## Fonts
+
+Pacifico-Regular
 

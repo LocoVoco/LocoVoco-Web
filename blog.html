@@ -1,64 +1,40 @@
-<!DOCTYPE html>
-<html>
+---
+title: LocoVoco | Connect & meet new people Hello
+layout: default
+---
 
+<link rel="stylesheet" href="resources/css/blog.css">
 
-<head>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset=“UTF-8”>
-
-    <title>blogs</title>
-    <meta name="description"
-        content="Find out about a new way to meet new like minded people. Let's cure the disconnect." />
-    <link rel="shortcut icon" type="image/x-icon" href="/resources/favicon.ico" />
-
-    <style>
-        html,
-        body {
-            width: 100%;
-            height: 100%;
-        }
-
-        article {
-            min-height: 100%;
-            display: grid;
-            grid-template-rows: auto 1fr auto;
-            grid-template-columns: 100%;
-        }
-    </style>
-
-</head>
-
-<body>
-    <article>
-
+<!-- company icons twitter etc taken from: https://icons.getbootstrap.com-->
+<article>
     <header class="sticky">
-        <a href="index.html" class="logo"> <img src="resources/favicon.ico" alt="Image description"></a>
-        <span>|</span>
-        <a href="blog.html" role="button">BLOG</a>
-        <a href="contact.html" role="button">CONTACT</a>
+        {% include header.html %}
     </header>
 
+    <!-- we are using a layout based on the flexbox layout see minicss.org it will display differently on mobile and web which is what we want -->
     <main>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-0 col-md-2"></div>
-            <div class="col-sm-12 col-md-8">
-                <div class="center">
-                    <ul>
-                    </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-0 col-md-2"></div>
+                <div class="col-sm-12 col-md-8">
+                    <div class="center">
+                        <ul style="list-style-type: none">
+                            {% for post in site.posts %}
+                            <li>
+                                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                                {{ post.excerpt }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <br />
                 </div>
+                <div class="col-sm-0 col-md-2"></div>
             </div>
-            <div class="col-sm-0 col-md-2"></div>
         </div>
-    </div>
-</main>
+    </main>
 
     <footer class="sticky">
-        <p>&#169; 2021- LocoVoco Uk </p>
+        {% include footer.html %}
     </footer>
 </article>
-
-</body>
-
-</html>
