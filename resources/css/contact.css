@@ -18,3 +18,7 @@ article {
 p {
     line-height: 2;
 }
+
+.profile-img {
+    border-radius: 20px;
+}
