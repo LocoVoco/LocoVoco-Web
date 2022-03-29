@@ -27,6 +27,9 @@ comments on the blog are using: https://talk.hyvor.com
 ## Resource used in building website
 
 https://simpleicons.org/
+https://fonts.google.com/icons
+https://icons.getbootstrap.com/#icons
+https://simpleicons.org
 
 ## Fonts
 
